@@ -30,6 +30,21 @@ Per selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 
 SELECT * FROM `exams` WHERE `date` = '2020-06-20' AND `hour` > '14:00:00';
 
 --------------------------------------------------------------------------------
+6):
+Per selezionare tutti i corsi di laurea magistrale:
 
+SELECT * FROM `degrees` WHERE `level` = 'magistrale';
 
+--------------------------------------------------------------------------------
+7):
+Per selezionare da quanti dipartimenti è composta l'università:
 
+SELECT COUNT(id) FROM `departments`;
+
+--------------------------------------------------------------------------------
+8):
+Per selezionare quanti sono gli insegnanti che non hanno un numero di telefono: 
+
+SELECT COUNT(id) FROM `teachers` WHERE `phone` IS NULL; 
+
+--------------------------------------------------------------------------------
