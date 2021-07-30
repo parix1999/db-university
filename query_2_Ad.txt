@@ -30,4 +30,14 @@ INNER JOIN departments ON departments.id = degrees.department_id
 GROUP BY departments.name;
 
 --------------------------------------------------------------------------------
+5):
+Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia: 
 
+SELECT students.name, students.surname, degrees.name
+FROM `students` 
+INNER JOIN degrees ON degrees.id = students.degree_id
+WHERE degrees.name = 'Corso di Laurea in Economia'
+GROUP BY students.name;
+
+
+--------------------------------------------------------------------------------
