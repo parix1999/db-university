@@ -14,3 +14,10 @@ FROM `teachers`
 GROUP BY office_address;
 
 --------------------------------------------------------------------------------
+3):
+Calcolare la m edia dei voti di ogni appello d'esame:
+
+SELECT AVG(vote)
+FROM `exam_student
+
+--------------------------------------------------------------------------------
