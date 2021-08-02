@@ -50,3 +50,12 @@ WHERE departments.name = 'Dipartimento di Neuroscienze';
 
 
 --------------------------------------------------------------------------------
+7):
+Selezionare tutti i Corsi in cui insegna Fulvio Amato : 
+
+SELECT courses.name, course_teacher.teacher_id
+FROM `course_teacher`
+LEFT JOIN courses ON course_teacher.course_id = courses.id
+WHERE course_teacher.teacher_id = 44
+
+--------------------------------------------------------------------------------
