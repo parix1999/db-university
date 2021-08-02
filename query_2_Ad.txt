@@ -73,6 +73,9 @@ ORDER BY students.name, students.surname ASC
 9):
 Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti:
 
-
+SELECT degrees.name, courses.name, teachers.name, teachers.surname
+FROM `courses`
+INNER JOIN degrees ON degrees.id = courses.degree_id
+INNER JOIN teachers ON teachers.id = courses.id
 
 --------------------------------------------------------------------------------
